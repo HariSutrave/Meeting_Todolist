@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Calendar & To-Do List</title>
+    <link rel="stylesheet" href="Meeting_Todo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meeting Calendar & To-Do List</h1>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Add Meeting</h2>
+                <form id="meetingForm">
+                    <input type="text" id="title" placeholder="Meeting Title" required>
+                    <input type="date" id="date" required>
+                    <input type="time" id="time" required>
+                    <textarea id="description" placeholder="Description (Optional)" rows="3"></textarea>
+                    <button type="submit">Add Meeting</button>
+                </form>
+            </section>
+
+            <section class="form-section">
+                <h2>Add To-Do</h2>
+                <form id="todoForm">
+                    <input type="text" id="task" placeholder="Task" required>
+                    <button type="submit">Add To-Do</button>
+                </form>
+            </section>
+
+            <section class="list-section">
+                <h2>Meetings</h2>
+                <ul id="meetingsList" class="list"></ul>
+            </section>
+
+            <section class="list-section">
+                <h2>To-Do List</h2>
+                <ul id="todosList" class="list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="Meeting_Todo.js"></script>
+</body>
+</html>
